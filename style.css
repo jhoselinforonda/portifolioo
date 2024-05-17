@@ -1,0 +1,245 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: black;
+    font-family: "Bebas Neue", sans-serif;
+}
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 2px solid white;
+    background-color: rgb(80, 79, 79);
+    padding: 20px 80px;
+    position: fixed; /*para q tituto no se mueva*/
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 999; /*gererquia para ficar ensima */
+
+}
+header nav ul{
+    list-style: none; /*para remover bolinhas del menu*/
+}
+header nav ul li{
+    display: inline-block; /* para poner um enlado del otro  */
+    margin-right: 15px; /* para dar espacio enre li */
+}
+header nav ul li a{
+    color: white;
+    text-decoration: none;
+    font-size: 20px;
+    font-weight: 500;
+}
+header nav ul li a:hover{
+    color: aquamarine;
+    border-bottom: 2px solid aquamarine;
+}
+header h2,
+ span{
+    text-shadow: 0 0 10px aquamarine;
+
+}
+h1, h2, h3{
+    color: aquamarine;
+    
+}
+h1{
+    font-size: 45px;
+    font-weight: 800;
+    margin-bottom: 15px;
+}
+h2{
+    font-size: 35px;
+    font-weight: 600;
+}
+h3{
+    font-size: 25px;
+    font-weight: 400;
+}
+p,form{
+    color:white;
+    font-size: 18px;
+}
+section{
+    padding-top: 120px;
+    margin: 0px 80px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+}
+.texto-home,
+.texto-sobre{
+    width: 50%;
+}
+.home img{
+    width: 20%;
+    border-radius:50%;
+    margin:0px auto;
+}
+.sobre img{
+    width: 30%;
+    margin: 0px auto;
+}
+.sobre h2{
+    margin-bottom: 15px;
+
+}
+.texto-sobre p{
+    font-size: 15px;
+
+}
+.servicos, .portfolio{
+    justify-content: space-around;
+    align-items: stretch;
+}
+.servicos h2,
+.portfolio h2,
+.contato h2{
+    width: 100%;
+    text-align: center;
+    margin-bottom: 100px;
+}
+.box{
+    border: 2px solid aqua;
+    text-align: center;
+    flex-basis: 250px;
+    padding: 30px;
+    color:rgb(56, 43, 129) ;
+}
+.box:hover{
+    box-shadow: 0 0 10px rgb(56, 43, 129);
+    text-shadow: o o 5px rgb(56, 43, 129);
+}
+ion-icon{
+    font-size: 80px;
+    margin-bottom: 20px;
+}
+.projetos{
+    flex-basis: 350px;
+    border: 4px solid rgb(18, 12, 48);
+    padding: 20px;
+    position: relative;
+}
+.projetos:hover{
+    text-shadow: 0 0 15px antiquewhite;
+    box-shadow: 0 0 15px rgb(102, 185, 218);
+}
+.projetos p{
+    text-shadow: none;
+}
+.projetos h2:hover{
+    box-shadow: 0 0 15px aquamarine;
+
+}
+.projetos img{
+    width: 100%;
+    margin: 20px auto;
+}
+.projetos a{
+    color: white;
+    text-decoration: none;
+    font-size: 20px;
+    position: absolute;
+    right: 20px;
+    bottom: 10px;
+}
+.projetos a:hover{ 
+    color:rgb(56, 43, 129); 
+    position: absolute ;
+    bottom: 10px;
+}
+
+.foto-contato,
+form{
+    width: 50%;
+}
+.foto-contato{
+background-image: url("img/perfil03.png");
+    background-size: cover;
+    border-radius: 10px;
+}
+.gradiente{
+    width: 100%;
+    height: 500px;
+    background-image: linear-gradient(to right, transparent 50%, black 80%);
+}
+form{
+    color: aliceblue;
+    font-size: 20px;
+    font-weight: 500;
+}
+.form{
+    margin-bottom: 15px;
+}
+labol,
+input,
+textarea{
+    width: 100%;
+    padding: 5px;
+    border-radius: 8px;
+    font-size: 20px;
+
+}
+input:focus,
+textarea:focus{
+    outline: 3px solid rgb(223, 170, 25);
+}
+button{
+    color: aliceblue;
+    background-color: aquamarine;
+    padding: 15px 60px;
+    font-size: 25px;
+    font-weight: bold;
+    border-radius: 10px;
+    border: 2px solid white;
+}
+button:hover{
+    background-color: rgb(56, 43, 129);
+}
+footer{
+    text-align: center;
+    border-top: 3px solid white ;
+    margin-top: 50px;
+    padding-top: 20px;
+}
+footer ul li{
+    display: inline-block;
+    margin: 20px 35px;
+}
+.social ul li  a ion-icon{
+    color: royalblue;
+    font-size: 30px;
+}
+.social ul li a ion-icon:hover{
+    color: aqua;
+}
+@media only screen and (max-width: 605px){
+    header{
+        display: block;
+        text-align: center;
+    }
+    section{
+        padding-top: 150px;
+    }
+    .home,
+    .sobre,
+    .contato{
+        flex-direction: column;
+    }
+    .texto-home,
+    .home img,
+    .sobre img,
+    .texto-sobre,
+    .foto-contato, form{
+        width: 100%;
+    }
+    .home img{
+        width: 50%;
+    }
+
+}
